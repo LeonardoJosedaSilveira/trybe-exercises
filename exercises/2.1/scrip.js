@@ -1,6 +1,6 @@
 let student = "euMesmo";
 let studentSkills = 10;
-// im Tryber..
+// Vou ter muito sucesso na programação;
 console.log("Sucesso!");
 
 
