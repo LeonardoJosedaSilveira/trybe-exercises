@@ -3,7 +3,7 @@
      2 - Modifique a cor do texto do h1 para laranja
      3 - Modifique a cor de fundo da lista não ordenada 
      4 - Crie uma classe para modificar a cor de fundo da tag p e da ul ao mesmo tempo -->
-     
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -14,7 +14,22 @@
 
     <title>HTML</title>
 
-    <style></style>
+    <style>
+
+        h1 {
+            size: 65px;
+            color: orange;
+        }
+
+        ul {
+            background-color: rgb(226, 199, 142);
+        }
+
+        .cor-simultanea {
+            background-color: rgb(207, 166, 53);
+        }
+
+    </style>
 
 </head>
 
@@ -22,9 +37,9 @@
 
     <h1>Exercícios 3.2</h1>
 
-    <p>Qual é sua cor favorita?</p>
+    <p class="cor-simultanea">Qual é sua cor favorita?</p>
 
-    <ul>
+    <ul class="cor-simultanea">
 
         <li>Amarelo</li>
 
