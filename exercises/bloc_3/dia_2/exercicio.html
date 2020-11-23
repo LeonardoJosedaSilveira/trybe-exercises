@@ -33,10 +33,14 @@
             color: orange;
 
             font-family: sans-serif;
+            text-align: center;
         }
 
         p {
             font-weight: 600;
+            font-size: 3em;
+
+            text-decoration: inherit;
         }
 
         body {
@@ -45,12 +49,27 @@
 
         ul {
             background-color: rgb(226, 199, 142);
+
+            font-style: italic; 
+            line-height: 20px;
         }
 
         .cor-simultanea {
             background-color: rgb(207, 166, 53);
         }
 
+        #linha1 {
+            background-color: yellow;
+        }
+
+        #linha2 {
+            background-color: red;
+        }
+
+        #linha3 {
+            background-color: brown;
+        }
+        
     </style>
 
 </head>
@@ -63,11 +82,11 @@
 
     <ul class="cor-simultanea">
 
-        <li>Amarelo</li>
+        <li id="linha1">Amarelo</li>
 
-        <li>Vermelho</li>
+        <li id="linha2">Vermelho</li>
 
-        <li>Marrom</li>
+        <li id="linha3">Marrom</li>
 
     </ul>
     
