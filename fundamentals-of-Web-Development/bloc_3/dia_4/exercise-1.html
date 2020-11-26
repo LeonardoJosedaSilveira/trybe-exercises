@@ -1,78 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css">
     <title>Stomotopoda</title>
   </head>
   <body>
     <header>
-        <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
+        <h1 id="home">Soco a 80km/h: Conheça o Stomatopoda</h1>
         <nav>
-            <a href="">Página Inicial</a>
-            <a href="">Sobre</a>
-            <a href="">Contato</a>
+            <a href="#home">Página Inicial</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
         </nav>            
     </header>
     <section>
         <article>
             <img src="/stomatopoda.jpg" alt="foto de um stomatopoda com cores vibrande e alegre a espera de algo pra dar um soco">
             <h2>Fatos sobre o Stomatopoda</h1>
-              <section>
+              <section id="sobre">
                 <h3>Quem é o Stomotopoda</h3>
                 <p>
-                    Seu nome científico é <b>Odontodactylus scyllarus</b>            
+                    Seu nome científico é <em>Odontodactylus scyllarus</em>            
                 </p>                
             </section>
-            <section>
-                <img src="" alt="">
-                <h3>Reino</h3>              
-                <p>
-                    conteudo 1</b>            
-                </p>
-            </section>
-            <section>
-                <img src="" alt="">
-                <h3>Filo</h3>
-                <p>
-                    conteudo 2</b>            
-                </p>
-            </section>
-            <section>
-                <img src="" alt="">
-                <h3>Subfilo</h3>
-                <p>
-                    conteudo 3</b>            
-                </p>
-            </section>
-            <section>
-                <img src="" alt="">
-                <h3>Classe</h3>
-                <p>
-                    conteudo 4</b>            
-                </p>
-            </section>
-            <section>
-                <img src="" alt="">
-                <h3>Subclasse</h3>
-                <p>
-                    conteudo 5</b>            
-                </p>
-            </section>
-            <section>
-                <img src="" alt="">
-                <h3>Ordem</h3>
-                <p>
-                    conteudo 6</b>            
-                </p>
-            </section>
-            
         </article>
     </section>
-
+    <table border="1">
+        <thead>
+          <tr>
+            <th id="classificacao">classificação</th>
+            <th id="descricao">descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="classificação">Reino</td>
+            <td headers="descrição">content 1</td>
+          </tr>
+          <tr>
+            <td headers="classificação">filo</td>
+            <td headers="descrição">content 2</td>
+          </tr>
+          <tr>
+            <td headers="classificação">subfilo</td>
+            <td headers="descrição">content 3</td>
+          </tr>
+          <tr>
+            <td headers="classificação">classe</td>
+            <td headers="descrição">content 4</td>
+          </tr>
+          <tr>
+            <td headers="classificação">sub classe</td>
+            <td headers="descrição">content 5</td>
+          </tr>
+          <tr>
+            <td headers="classificação">ordem</td>
+            <td headers="descrição">content 6</td>
+          </tr>
+        </tbody>
+      </table>
+   
+      
+ 
     <section>
-        <header>referências bibliográficas</header>
+        <h2>referências bibliográficas</h2>
         <nav>
             <ol>
                 <li><a href="">nome pro linck</a></li>
@@ -86,13 +79,13 @@
     </section>
 
     <aside>
-        <header>conteúdo adjacente</header>
+        <h3>conteúdo adjacente</h3>
         <a href="https://www.youtube.com/watch?v=E0Li1k5hGBE">Veja aqui um socão</a>
     </aside>
         
     
 
-    <footer>Conteúdo compilado por Leonardo José da Silveira, 2020</footer>
+    <footer id="contato">Conteúdo compilado por Leonardo José da Silveira, 2020</footer>
   
     
   </body>
