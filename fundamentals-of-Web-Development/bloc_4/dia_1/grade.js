@@ -1,16 +1,19 @@
 let nota = 49;
-let letras = ['F', 'E', 'D', 'C', 'B', 'A'];
-let valores = [49, 50, 60, 70, 80, 90];
+
+// score less than 50 receives F
+let letras = ['E', 'D', 'C', 'B', 'A'];
+let valores = [50, 60, 70, 80, 90];
+
+
 let resultado;
 
 if(nota >= 0 && nota <= 100){
    for(let counter = 0; counter < letras.length; counter += 1){
-        //console.log(letras[counter]);
           if(nota >= valores[counter]){
+            console.log(resultado);
             resultado = letras[counter];
           } else {
-            resultado = letras[counter];
-            break;
+            resultado = 'F';
           }
     }
 } else {
