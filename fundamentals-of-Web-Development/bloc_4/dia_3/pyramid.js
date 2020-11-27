@@ -1,5 +1,5 @@
 
-let n = 5;
+let n = 17;
 let counter = n;
 let art = ['',];
 let space = '';
@@ -15,8 +15,6 @@ for (let index = 1; index < counter; index++) {
     }
     
 }
-
-console.log(art)
 
 for (let index = 0; index < n; index++) {
     counter -= 1;
