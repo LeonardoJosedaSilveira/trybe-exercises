@@ -1,4 +1,4 @@
-let n = 15;
+let n = 25;
 let counter = n;
 let art = [''];
 let space = '';
