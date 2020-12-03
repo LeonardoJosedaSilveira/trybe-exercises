@@ -1,20 +1,14 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbersx =[]
 
-
-
- 
-
-
-
-for (let i = 1; i < numbers.length; i++) {
-    for (let j = 0; j < i; j++) {
-      if (numbers[i] > numbers[j]) {
-        let position = numbers[i];
-  
-        numbers[i] = numbers[j];
-        numbers[j] = position;
-      }
+for (let index = 0; index < numbers.length; index++) {
+    
+    if (index === numbers.length -1){
+        numbersx.push(numbers[index] * 2);
+    } else {
+        numbersx.push(numbers[index] * numbers[index + 1]);
     }
-  }
+    
+}
 
-  console.log(numbers)
+console.log(numbersx)
