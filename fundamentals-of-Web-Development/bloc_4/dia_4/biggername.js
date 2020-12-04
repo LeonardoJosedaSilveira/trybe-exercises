@@ -12,6 +12,6 @@ function biggerName(names) {
     return index;
 }
 
-let names = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+// let names = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
 console.log(biggerName(names))
