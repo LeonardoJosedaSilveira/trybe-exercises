@@ -80,6 +80,7 @@
 
       document.querySelector('body').appendChild(divMainContent);
       divMainContent.className = 'main-content';
+      divMainContent.id = 'main-content';
 
       divMainContent.appendChild(h3FirstMainContent);
       h3FirstMainContent.className = 'description';
@@ -99,12 +100,13 @@
       
       divMainContent.appendChild(divCenterContent);
       divCenterContent.className = 'center-content';
-
+      
       divCenterContent.appendChild(pDivCenterContet);
       pDivCenterContet.innerText = 'algum texto';
 
       divMainContent.appendChild(divRightContent);
-      divRightContent.className = 'right-content';      
+      divRightContent.className = 'right-content';
+      divRightContent.id = 'right-content';   
 
       divRightContent.appendChild(ulRightContent);
       ulRightContent.className = 'numbers-list';
@@ -129,6 +131,23 @@
       ulRightContent.appendChild(iten)
     }
       
-    </script>
-  </body>
+    let father = document.querySelector('.main-content');
+    father.removeChild(document.querySelector('.left-content'));
+
+    document.getElementById('right-content').style = 'margin-right: auto';
+
+    document.getElementById('main-content').style.backgroundColor = 'green';
+
+    for (let index = 0; index < numbersList.length; index += 1) {
+      
+      if (ulRightContent.innerText.includes('nove')) {
+        
+        ulRightContent.removeChild(ulRightContent.lastChild);
+      }
+     
+    }
+    
+
+   </script>
+     </body>
 </html>
