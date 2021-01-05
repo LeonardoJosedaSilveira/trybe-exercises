@@ -8,16 +8,19 @@
 <body>
     <form action="" method="get">
         <fieldset>
-            <textarea name="texto-1" id="text-area-1" cols="40" rows="5" maxlength="40" required></textarea>
+            <textarea name="texto-1" id="text-area-1" cols="40" rows="5" maxlength="40" placeholder="nome" required></textarea>
             <br>
-            <input type="email" name="email" id="email-1" maxlength="50" required>
+            <input type="email" name="email" id="email-1" maxlength="50" placeholder="e-mail" required>
             <br>
-            <input type="text" maxlength="11" >
+            <input type="text" name="cpf" maxlength="11" id="cpf" placeholder="cpf sem ." >
             <br>
-            <textarea name="texto-2" id="textfild" name="text" id="tex-area-2" cols="30" rows="10" maxlength="200" required></textarea>
-
-
+            <textarea name="endereco" id="text-area-2" name="text" id="tex-area-2" cols="30" rows="10" maxlength="200" placeholder="endereço" required></textarea>
+            <br>
+            <input type="text" name="texto" id="city" name="city" placeholder="cidade" maxlength="28">
+            <select name="estado" id="estado">
+            </select>
         </fieldset>
+        <script src="script.js"></script>
     </form>
     
     
