@@ -6,9 +6,9 @@
     <title>Formulario</title>
 </head>
 <body>
-    <form action="" method="get">
+    <form action="" method="get" >
         <fieldset>
-            <textarea name="texto-1" id="text-area-1" cols="40" rows="5" maxlength="40" placeholder="nome" required></textarea>
+            <textarea name="texto-1" id="text-area-1" cols="40" rows="1" maxlength="40" placeholder="nome" required></textarea>
             <br>
             <input type="email" name="email" id="email-1" maxlength="50" placeholder="e-mail" required>
             <br>
@@ -16,13 +16,35 @@
             <br>
             <textarea name="endereco" id="text-area-2" name="text" id="tex-area-2" cols="30" rows="10" maxlength="200" placeholder="endereço" required></textarea>
             <br>
-            <input type="text" name="texto" id="city" name="city" placeholder="cidade" maxlength="28">
+            <input type="text" name="texto" id="city" name="city" placeholder="cidade" maxlength="28" required>
             <select name="estado" id="estado">
             </select>
+            <br>
+            <label for="house">
+                <input type="radio" name="moradia" id="house">
+                casa
+            </label>
+            <label for="ap">
+                <input type="radio" name="moradia" id="ap">
+                apartamento
+            </label>           
         </fieldset>
-        <script src="script.js"></script>
+        <br>
+        <fieldset>
+            <textarea name="resumo-curriculo" id="text-area-3" cols="30" rows="10" maxlength="1000" required placeholder="Resumo de seu curriculo"></textarea>
+            <br>
+            <input type="text" name="cargo" maxlength="40" required placeholder="cargo" >
+            <br>
+            <input type="text" name="descrição-cargo" maxlength="500" placeholder="descrição do cargo" required>
+            <input type="date" name="data" id="data" required >
+            
+        </fieldset>
+       <br>
+       <button type="submit" id="button-enviar">enviar formulario</button>   
+       <button type="reset">limpar</button>      
+        
     </form>
-    
+    <script src="script.js"></script>
     
 </body>
 </html>
