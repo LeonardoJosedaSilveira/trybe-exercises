@@ -41,5 +41,15 @@ addDaysOfMonth();
 //     Adicione a este botão a ID "btn-holiday" .
 //     Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 
+function bntHolidays(Feriados) {
+  const holday = Feriados;
+  const bnt = document.createElement('button');
+  let elementFather = document.querySelector('.buttons-container')
 
+  bnt.id = 'btn-holiday';
+  bnt.innerHTML = 'Feriados';
+  elementFather.appendChild(bnt)
+  
+}
 
+bntHolidays();
