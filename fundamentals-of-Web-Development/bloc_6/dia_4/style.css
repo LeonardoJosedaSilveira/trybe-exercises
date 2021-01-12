@@ -19,11 +19,13 @@
     display: flex;
     justify-content: center;
     width: 268px;
+    order: 1;
   }
   
   .menu-container {
     display: flex;
     width: 500px;
+    order: 2;
   }
   
   .menu-container ul {
@@ -40,4 +42,4 @@
     margin-right: 10px;
   }
 
-  /* Adicione uma propriedade que defina o tamanho Flexbox base para o container da imagem 268px e para o container do menu 500px . Após aplicar as propriedades o header deverá estar similar a imagem abaix */
+  /* Adicione uma propriedade Flexbox que modifique a ordem em que a logomarca e os itens do menu aparecem na tela. Após aplicar a propriedade o header deverá estar similar a imagem abaixo: 
