@@ -12,15 +12,18 @@
   .header-container {
     background-color: #5C687C;
     display: flex;
+    
   }
   
   .logo-container {
     display: flex;
     justify-content: center;
+    width: 268px;
   }
   
   .menu-container {
     display: flex;
+    width: 500px;
   }
   
   .menu-container ul {
@@ -36,3 +39,5 @@
     list-style: none;
     margin-right: 10px;
   }
+
+  /* Adicione uma propriedade que defina o tamanho Flexbox base para o container da imagem 268px e para o container do menu 500px . Após aplicar as propriedades o header deverá estar similar a imagem abaix */
