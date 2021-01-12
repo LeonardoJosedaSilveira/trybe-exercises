@@ -11,7 +11,7 @@
   
   .header-container {
     background-color: #5C687C;
-    display: flex;
+    display: flex;   
     
   }
   
@@ -20,18 +20,21 @@
     justify-content: center;
     width: 268px;
     order: 1;
+    
   }
   
   .menu-container {
     display: flex;
     width: 500px;
     order: 2;
+  
   }
   
   .menu-container ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    align-self: center;
   }
   
   .menu-container li {
@@ -40,6 +43,16 @@
     font-size: 1.3rem;
     list-style: none;
     margin-right: 10px;
+    
   }
 
-  /* Adicione uma propriedade Flexbox que modifique a ordem em que a logomarca e os itens do menu aparecem na tela. Após aplicar a propriedade o header deverá estar similar a imagem abaixo: 
+  .header-container .menu-container{
+      width: 800px;
+      border: #d12013 1px solid;
+      
+
+
+  }
+ 
+
+  /* Adicione uma propriedade Flexbox que modifique a ordem em que a logomarca e os itens do menu aparecem na tela. Após aplicar a propriedade o header deverá estar similar a imagem abaixo:  nao feito
