@@ -59,7 +59,7 @@ function changeColor() {
   let dayss = document.querySelectorAll('.holiday')
   for (let index = 0; index < dayss.length; index++) {
     let temp = dayss[index].className
-    if (temp === 'day holiday' || temp === 'day holiday friday') {
+    if (temp === 'day holiday' || temp === 'day holiday zoom' || temp === 'day holiday friday' || temp === 'day holiday friday zoom') {
       dayss[index].classList.add('changeDay')
     } else {
       dayss[index].classList.remove('changeDay')
@@ -71,9 +71,7 @@ function changeColor() {
 let clickFriday = document.getElementById('btn-friday');
 clickFriday.addEventListener('click', changeText)
 
-
-
-  
+ 
 function changeText() {
   
     let textoExibido = 'sextouuu'
@@ -92,7 +90,24 @@ function changeText() {
 }
 
 
-// Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
+let mouseOnriba = document.querySelectorAll('#days li')
+for (let index = 0; index < mouseOnriba.length; index++) {
+  mouseOnriba[index].addEventListener('mouseover', zoom)
+  mouseOnriba[index].addEventListener('mouseout', zoom)
+  mouseOnriba[index].id = 'day' + index  
+}
 
-//     É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
+
+function zoom(zoomAki) {
+  let mouseCima = zoomAki.target.className  
+  if (mouseCima === 'day' || mouseCima === 'day friday' || mouseCima === 'day holiday' || mouseCima === 'day holiday friday' || mouseCima === 'day holiday changeDay' || mouseCima === 'day holiday friday changeDay') {
+    zoomAki.target.classList.add('zoom')
+  } else {
+    zoomAki.target.classList.remove('zoom')
+  }  
+}
+
+// Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+
+// Dica - Propriedade: event.target .
 
