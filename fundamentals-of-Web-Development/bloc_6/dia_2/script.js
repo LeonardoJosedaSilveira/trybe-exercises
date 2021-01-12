@@ -33,7 +33,7 @@ function printData() {
     let resumo = document.getElementById('text-area-3').value
     let cargo = document.getElementById('cargo').value
     let descricaoCargo = document.getElementById('descricao-cargo').value
-    let data = document.getElementById('data').value
+    // let data = document.getElementById('data').value
 
     
     document.getElementById('export-to-page').appendChild(document.createElement('p')).innerText = nome;
@@ -55,7 +55,7 @@ function capture() {
     let resumo = document.getElementById('text-area-3').value
     let cargo = document.getElementById('cargo').value
     let descricaoCargo = document.getElementById('descricao-cargo').value
-    let data = document.getElementById('data').value
+    // let data = document.getElementById('data').value
 
     
     document.getElementById('export-to-page').appendChild(document.createElement('p')).innerText = nome;
