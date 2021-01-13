@@ -20,8 +20,17 @@
         for (let index = 0; index < counter.length; index++) {
             choice = choice.replace('x', wordChange);
         }       
-        console.log(choice)        
+        return choice;    
+    }
+    // parametros   -  texto para ser alterado , opção para colocar no lugar 
+ 
+    
+    const secondWord = searchCharacter('Tryber x aqui!', 'Bebeto');
+    const habilits = ['html', 'js', 'phyton', 'css', 'flex-box'];
+
+    let conctWord = (first, second) => {
+        console.log(`${first} Minhas cinco principais habilidades são: ${second}  #goTrybe.`)
     }
 
-    
- searchCharacter('texto muito texto texto para textualiza', 'TIULUAM')
+    conctWord(secondWord, habilits);
+
